@@ -1,0 +1,53 @@
+/* ==========================================================================
+   1. Google Fonts + Base Reset
+   ========================================================================== */
+   /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Font Style for Entire Website */
+body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button {
+    font-family: 'Inter', sans-serif;
+}
+
+
+html,body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility classes */
+.hidden   { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+.fade-in  { opacity: 1; transform: translateY(0); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 0px; }
+
+/* ==========================================================================
+   2. Header & Navigation
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   3. Hero / Slider
+   ========================================================================== */
+
+/* ==========================================================================
+   4. About Section
+   ========================================================================== */
+/* About Section */
+
+
+
+/* ==========================================================================
+   6. Services Section
+   ========================================================================== */
+
+
+/* ==========================================================================
+   7. Contact Section
+   ========================================================================== */
+/* === Contact Section === */
+/* Offices */
