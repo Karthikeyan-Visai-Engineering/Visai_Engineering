@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section */
+.affiliations {
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #ffffff, #eaf4ff, #dbeafe);
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #003366;
+  margin-bottom: 50px;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Marquee */
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Track */
+.track {
+  display: flex;
+  gap: 60px;
+  animation: scroll 35s linear infinite;
+}
+
+/* Logo Card */
+.logo-card {
+  min-width: 160px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #dbeafe;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.logo-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.logo-card img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .track {
+    gap: 30px;
+  }
+
+  .logo-card {
+    min-width: 120px;
+    height: 100px;
+  }
+
+  .logo-card img {
+    height: 60px;
+  }
+}

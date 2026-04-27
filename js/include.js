@@ -57,6 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutSection.innerHTML = data;
       return fetch("contact.html");
     })
+     .then(res => res.text())
+    .then(data => {
+      aboutSection.innerHTML = data;
+      return fetch("associations.html");
+    })
     .then(res => res.text())
     .then(data => {
       contactSection.innerHTML = data;

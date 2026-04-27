@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2f6;
+}
+
+.tools-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.tools-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.tools-section p {
+  color: #6c7a89;
+  margin-bottom: 40px;
+}
+
+/* GRID FIX */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  padding: 25px 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* IMAGE FIX (IMPORTANT) */
+.card img {
+  width: 100px;          /* fixed width */
+  height: 80px;         /* fixed height */
+  object-fit: contain;  /* keeps logo ratio */
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.card span {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
