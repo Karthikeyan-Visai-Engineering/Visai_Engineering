@@ -48,3 +48,12 @@
   text-align: center;
   padding: 2rem;
 }
+
+
+/* Global container (ADD THIS if not already) */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
