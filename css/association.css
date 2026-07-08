@@ -1,0 +1,58 @@
+/* Section */
+.affiliations {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffffff, #eaf4ff, #dbeafe);
+  overflow: hidden;
+}
+
+/* Container already OK from your code */
+
+/* Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Marquee */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track */
+.track {
+  display: flex;
+  gap: 50px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+/* Logo card */
+.logo-card {
+  min-width: 140px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.logo-card img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
