@@ -1,0 +1,103 @@
+/* Section */
+.tools-section {
+  padding: 80px 20px;
+  background: #eef2f6;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.section-subtitle {
+  color: #6c7a89;
+  margin-bottom: 40px;
+
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card */
+.tool-card {
+  background: #fff;
+  padding: 25px 15px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.tool-card img {
+  width: 90px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.tool-card span {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .tool-card img {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.subtitle {
+  text-align: center;           /* 👈 centers text */
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #6c7a89;
+
+  max-width: 700px;             /* 👈 keeps line width readable */
+  margin: 0 auto 40px;          /* 👈 centers block + spacing */
+
+  line-height: 1.6;
+}
